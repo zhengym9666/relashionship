@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply bg-gradient-to-b from-white to-neutral-50 text-neutral-800 font-sans antialiased;
+}
+
+/* Custom components */
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-secondary/90 hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 border border-neutral-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.input {
+  @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 shadow-sm hover:shadow;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold text-neutral-900 mb-4;
+}
+
+.section-subtitle {
+  @apply text-neutral-600 mb-8;
+}
+
+/* Smooth transitions for all hover effects */
+* {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-300 rounded-full hover:bg-neutral-400;
+}
